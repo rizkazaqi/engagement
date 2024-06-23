@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.frame {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.decoration {
+    margin-bottom: 20px;
+}
+
+.decoration img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+h1 {
+    font-style: italic;
+    color: #333;
+    font-size: 1.7em;
+}
+
+.names {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    font-style: italic;
+}
+
+.invitation-text {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+}
+
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.image-note {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    .frame {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .names, .invitation-text {
+        font-size: 1em;
+    }
+
+    .map-container {
+        height: 0;
+        padding-bottom: 75%; /* Aspect ratio 4:3 */
+        position: relative;
+    }
+
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
