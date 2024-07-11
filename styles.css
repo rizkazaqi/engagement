@@ -55,11 +55,16 @@ h1 {
     margin: 20px 0;
     color: #333;
     font-style: italic;
-/*     white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; */
-    word-break: keep-all;
+    display: flex;
+    justify-content: space-between; /* Align items with space in between */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
 }
+
+.names span {
+    flex: 1; /* Each name takes up equal space */
+    text-align: center; /* Center text in each span */
+}
+
 
 .invitation-text {
     margin-bottom: 30px;
