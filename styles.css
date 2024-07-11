@@ -55,16 +55,29 @@ h1 {
     margin: 20px 0;
     color: #333;
     font-style: italic;
-    display: flex;
-    justify-content: space-between; /* Align items with space in between */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    text-align: center; /* Center align the whole block */
 }
 
-.names span {
-    flex: 1; /* Each name takes up equal space */
-    text-align: center; /* Center text in each span */
+.name-left,
+.name-right,
+.name-center {
+    display: inline-block; /* Ensure each name is on a separate line */
 }
 
+.name-left {
+    text-align: left; /* Align left */
+    float: left;
+}
+
+.name-center {
+    text-align: center; /* Align center */
+    float: left;
+}
+
+.name-right {
+    text-align: right; /* Align right */
+    float: right;
+}
 
 .invitation-text {
     margin-bottom: 30px;
