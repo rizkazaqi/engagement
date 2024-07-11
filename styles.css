@@ -52,14 +52,23 @@ h1 {
 
 .name-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .name-box {
     flex: 1;
     text-align: center;
+}
+
+.name-left {
+    text-align: left;
+}
+
+.name-right {
+    text-align: right;
 }
 
 .name {
