@@ -49,34 +49,30 @@ h1 {
     font-size: 1.7em;
 }
 
-.names {
+.names-container {
     font-size: 1.2em;
     font-weight: bold;
     margin: 20px 0;
     color: #333;
     font-style: italic;
-    text-align: center; /* Center align the whole block */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .name-left,
 .name-right,
 .name-center {
-    display: inline-block; /* Ensure each name is on a separate line */
+    flex: 1;
+    text-align: center;
 }
 
 .name-left {
-    text-align: left; /* Align left */
-    float: left;
-}
-
-.name-center {
-    text-align: center; /* Align center */
-    float: left;
+    text-align: left;
 }
 
 .name-right {
-    text-align: right; /* Align right */
-    float: right;
+    text-align: right;
 }
 
 .invitation-text {
