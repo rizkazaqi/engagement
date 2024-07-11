@@ -65,11 +65,11 @@ h1 {
 }
 
 .name-left {
-/*     text-align: left; */
+    text-align: center;
 }
 
 .name-right {
-/*     text-align: right; */
+    text-align: center;
 }
 
 .name {
