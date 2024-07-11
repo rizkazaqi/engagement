@@ -51,7 +51,7 @@ h1 {
 }
 
 .name-container {
-    display: none;
+/*     display: none; */
 /*     display: flex; */
     justify-content: space-between;
     align-items: center;
