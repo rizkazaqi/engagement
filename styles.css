@@ -55,9 +55,9 @@ h1 {
     margin: 20px 0;
     color: #333;
     font-style: italic;
-    white-space: nowrap; /* Ensures text stays on one line */
-    overflow: hidden; /* Hides any overflow */
-    text-overflow: ellipsis; /* Shows ellipsis (...) if text overflows *
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .invitation-text {
